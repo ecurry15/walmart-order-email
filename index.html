@@ -13,10 +13,13 @@
     }
     td {
       padding: 0;
+      border-collapse: collapse;
     }
-    p, h1, h2, h3, h3, h4, h5 {
+    p, h1, h2, h3, h3, h4, h5, a {
       font-family: Helvetica, sans-serif,  Arial;
 	Margin:0;
+  margin-block-start: 0;
+    margin-block-end: 0;
 }
     p {
       font-size: .88rem;
@@ -57,8 +60,28 @@
           </td>
         </tr>
           <tr>
-            <td style="padding-top: 10px;">
-              <p style="color: grey;">Order date: Fri, Sep 9, 2022</p>
+            <td style="padding-top: 10px;color: grey;">
+              <p class="order-date-number">Order date: Fri, Sep 9, 2022</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="color: grey;">
+              <p class="order-date-number">Order Number: 2050578-30293917</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 16px 0 24px 0;">
+              <h1 style="color: #0071dc;font-weight: 400;font-size: 2.3rem;">Your order is on the way</h1>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="color: black; line-height: 1.38;word-break: break-word;font-weight: 500;text-align: left;">Great news, Patrick – order <span style="text-decoration: underline;">2050578-30293917</span> is set to arrive by Sun, Sep 11. We’ll let you know when it’s been delivered.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 32px 0">
+              <a style="font-size: 1rem;font-weight: 600; text-decoration: none;color: white;background-color: #0065ff;padding: 13px 22px;border-radius: 24px;" href="#">Track shipment</a>
             </td>
           </tr>
       </table>
