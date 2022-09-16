@@ -18,7 +18,6 @@
     td {
       padding: 0;
       border-collapse: collapse;
-      min-width: 100%;
     }
     p, h1, h2, h3, h3, h4, h5, a {
       font-family: Helvetica, sans-serif,  Arial;
@@ -118,10 +117,51 @@
       .explore__img-one-spacerTwo {
         height: 32px!important;
       }
+      .explore__td {
+        text-align: center;
+      }
+      .explore__td:nth-child(2) {
+        padding-right: 0 !important;
+      }
+      .content-container__group-td {
+        text-align: center;
+      }
+      .order td {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+      .order td:nth-child(1) {
+        padding: 0 0 16px 0 !important;
+      }
+      .order td:nth-child(3) {
+        padding-left: 0!important;
+      }
+      .shipping__details {
+        display: block;
+        width: 100%;
+      }
+      .address__text {
+        line-height: 1.2;
+      }
+      .shipping__details.date {
+        padding-top: 16px;
+      }
     }
-    @media (max-width: 399.98px) {
-      
+    @media (max-width: 405px) { 
+      .explore__img-one-spacerTwo {
+        height: 16px !important;
+      }
     }
+    @media (max-width: 350px) {
+      .links-section__one-text {
+        font-size: .9rem!important;
+      }
+      .links-section__two-text {
+        font-size: .9rem!important;
+      }
+    }
+
   </style>
   <!--[if (gte mso 9)|(IE)]>
     <style type="text/css">
@@ -134,7 +174,7 @@
 </head>
 <body style="Margin: 0;padding: 0;min-width: 100%;">
   <center style="width: 100%;table-layout: fixed;padding-bottom: 40px;">
-    <table class="table-wrapper" style="width: 100%; max-width: 600px;border: 16px solid #e5f1fc;table-layout: fixed;">
+    <table class="table-wrapper" style="width: 100%; max-width: 600px;border: 16px solid #e5f1fc;table-layout: fixed;padding: 0;margin: 0 !important;">
       <tr>
         <td style="min-width: 100%;">
       <div class="preHeader-text" style="font-size: 0px;color: white;line-height: 1px;mso-line-heigt-rule:exactly;display: none;max-width: 0px;max-height: 0px;opacity: 0;overflow: hidden;mso-hide:all">
@@ -187,26 +227,41 @@
                 <h2 style="color: #0071dc;font-size: 1.8rem;font-weight: 500;">Shipping</h2>
               </td>
             </tr>
-            <tr class="shipping__rowOne" style="width: 100%;">
-              <td style="width: 50%;">
-                <p style="font-weight: 600;font-size: 1rem;color: black;">Address</p>
+            <tr>
+              <td class="shipping__details address">
+                <table role="presentation" style="width: 100%;vertical-align: top;">
+                  <tr>
+                    <td>
+                      <p style="font-size: 1rem;font-weight: 600;color: black;text-align: left;padding-bottom: 5px;">Address</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p class="address__text" style="white-space: pre-line;font-size: 1rem;color: #6d6e71;">Patrick Star
+                        14270 Rock Dr.
+                        Bikini Bottom, CA 90210
+                      </p>
+                    </td>
+                  </tr>
+
+                </table>
               </td>
-              <td>
-                <p style="font-weight: 600;font-size: 1rem;color: black;">Estimated date</p>
-              </td>
-            </tr>
-            <tr class="shipping__rowTwo" style="width: 100%;color: #6d6e71">
-              <td style="padding-top: 5px;">
-                <p style="font-weight: 500;font-size: 1rem;">Patrick Star</p>
-              </td>
-              <td>
-                <p style="font-weight: 500;font-size: 1rem;">Sun, Sep 11, 2022</p>
-              </td>
-            </tr>
-            <tr class="shipping__rowThree" style="color: #6d6e71;">
-              <td style="padding-top: 2px;">
-                <p style="font-weight: 500;font-size: 1rem;white-space: pre-line;line-height: 1.1;">14270 Rock Dr
-                Bikini Bottom, CA 90210</p>
+              <td class="shipping__details date" style="vertical-align: top;">
+                <table role="presentation" style="width: 100%;vertical-align: top;">
+                  <tr>
+                    <td style="vertical-align: top;">
+                      <p style="font-size: 1rem;font-weight: 600;color: black;text-align: left;padding-bottom: 5px;">Estimated date</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p style="font-size: 1rem;color: #6d6e71;">
+                        Sun, Sep 11, 2022
+                      </p>
+                    </td>
+                  </tr>
+
+                </table>
               </td>
             </tr>
           </table>
@@ -297,7 +352,7 @@
                     Below order minimum fee
                   </p>
                 </td>
-                <td style="padding: 4px 0;">
+                <td style="padding: 4px 0;vertical-align: top;">
                   <p style="font-size: 1rem;font-family: Google Sans,Roboto,RobotoDraft,Helvetica,Arial,sans-serif;font-weight: 600;text-align: right;">$6.99</p>
                 </td>
               </tr>
