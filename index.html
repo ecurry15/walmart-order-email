@@ -40,7 +40,7 @@
       border:16px solid #e5f1fc;
       padding: 32px 0;
     }
-    @media only screen and (max-width: 599.98px) {
+    @media only screen and (max-width: 632.98px) {
       .main-table {
         border:14px solid #e5f1fc !important;
       }
@@ -89,11 +89,32 @@
       width: 50% !important;
       table-layout: fixed;
     }
+    .walmart-do-more__questions-links {
+      padding-left: 0 !important;
+    }
+   
     }
     @media only screen and (max-width:420px) {
       .main-table {
-        border:12px solid #e5f1fc !important;
+        border: 8px solid #e5f1fc !important;
         max-width: 420px !important;
+      }
+      .your-order-text {
+        font-weight: 500;
+        font-size: 25px !important;
+      }
+      .track-order-btn > a {
+        font-size: 14px !important;
+        padding: 10px 16px !important;
+      }
+      .shipping-title > h2 {
+        font-size: 25px !important;
+      }
+      .order-summary__h2 {
+        font-size: 25px !important;
+      }
+      .explore-more__h2 {
+        font-size: 25px !important;
       }
       .tracking__order-item-img {
         display: block;
@@ -165,7 +186,7 @@
             </tr>
             <tr>
               <td style="padding-bottom: 24px;">
-                <h2 style="font-size: 36px;color: #0071dc;">
+                <h2 class="your-order-text" style="font-size: 36px;color: #0071dc;">
                   Your order is on the way
                 </h2>
               </td>
@@ -178,7 +199,7 @@
               </td>
             </tr>
             <tr>
-              <td style="padding: 24px 0 32px;">
+              <td class="track-order-btn" style="padding: 24px 0 32px;">
                 <a href="#" style="color: white;background-color: #0065ff;font-size: 16px;padding: 12px 24px;text-decoration: none;font-weight: 600;border-radius: 20px;">
                   Track shipment
                 </a>
@@ -345,7 +366,7 @@
           <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
             <tr>
               <td style="padding-bottom: 18px;">
-                <h2 style="font-size: 28px;color: #0065ff;font-weight: 500;">
+                <h2 class="order-summary__h2" style="font-size: 28px;color: #0065ff;font-weight: 500;">
                   Order summary
                 </h2>
               </td>
@@ -406,7 +427,7 @@
           <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation">
             <tr>
               <td style="padding-bottom: 32px;">
-                <h2 style="font-size: 28px;color: #0065ff;font-weight: 500;">Explore more savings</h2>
+                <h2 class="explore-more__h2" style="font-size: 28px;color: #0065ff;font-weight: 500;">Explore more savings</h2>
               </td>
             </tr>
             <tr>
@@ -487,7 +508,7 @@
                               <tr>
                                 <td class="explore__item-container" style="width: 118px;">
                                   <a href="#" style="width: 100%;max-height: 118px;">
-                                    <img style="width: 100%;max-height: 118px; text-align: left;padding: 0;" src="https://ci5.googleusercontent.com/proxy/4Ya1Ye35gxvEoxLPVRwlP_ZwG4Q7JTOQHzWXmWBs7dpBZ2zu1VTPgBJbFQ_2d4N-Asd4A32lRrw9HzTyvyG6kfqN8-Q0xakfW86aD4r8UN7mtFP2kTxAdeWHGNeNy90UtOE4vrT9927-7bJ0brpmd06UzwhIT_qGwhzG9l3k=s0-d-e1-ft#https://i5.walmartimages.com/asr/fb77a6da-c985-4a83-bc99-50a07f9acce4.dbf141937271c0847db0975ec2fb7bf2.jpeg" alt="explore more item">
+                                    <img style="width: 100%;max-height: 125px; text-align: left;padding: 0;" src="https://ci5.googleusercontent.com/proxy/4Ya1Ye35gxvEoxLPVRwlP_ZwG4Q7JTOQHzWXmWBs7dpBZ2zu1VTPgBJbFQ_2d4N-Asd4A32lRrw9HzTyvyG6kfqN8-Q0xakfW86aD4r8UN7mtFP2kTxAdeWHGNeNy90UtOE4vrT9927-7bJ0brpmd06UzwhIT_qGwhzG9l3k=s0-d-e1-ft#https://i5.walmartimages.com/asr/fb77a6da-c985-4a83-bc99-50a07f9acce4.dbf141937271c0847db0975ec2fb7bf2.jpeg" alt="explore more item">
                                   </a>
                                 </td>
                               </tr>
@@ -542,7 +563,7 @@
               <td class="walmart-do-more__shop-apps" style="width: 50%;text-align: left;vertical-align: top;">
                 <table cellpadding="0" cellspacing="0" border="0" role="presentation">
                   <tr>
-                    <td style="width: 100%;text-align: left;vertical-align: top;">
+                    <td class="shop-apps__header" style="width: 100%;text-align: left;vertical-align: top;">
                       <p style="font-size: 14px;padding-bottom: 16px;color: #000;"> 
                         Shop anywhere with the Walmart app</p>
                     </td>
@@ -562,7 +583,7 @@
               <td class="walmart-do-more__questions-links" style="vertical-align: top;padding-left: 8px;">
                 <table cellpadding="0" cellspacing="0" border="0" role="presentation">
                   <tr>
-                    <td style="width: 100%;text-align: left;vertical-align: top;padding-bottom: 16px;">
+                    <td class="questions-links__header" style="width: 100%;text-align: left;vertical-align: top;padding-bottom: 16px;">
                       <p style="font-size: 14px;color: #000;"><span style="font-weight: 600;">Questions?</span> Visit our <a href="#" style="font-size: 14px;color: #000;">Help Center</a></p>
                     </td>
                   </tr>
